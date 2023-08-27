@@ -1,0 +1,29 @@
+{% extends "./base.njk" %}
+
+{% block content %}
+    <article class="two-col">
+        <aside>
+            <p>
+                <strong>Name:</strong>
+                {{title}}</p>
+            <p>
+                <strong>Track Code:</strong>
+                <span class="track_code">{{track_code}}</span></p>
+            <p>
+                <strong>Summary:</strong>
+                {{summary}}</p>
+            <p>
+                <strong>Status:</strong>
+                <span class="status-{{status | slugify }}">{{status}}</span></p>
+            {% if link %}
+                <p>
+                    <a href="{{link}}" target=_blank class="button">Access Study</a>
+                </p>
+            {% endif %}
+        </aside>
+        <section>
+            <h2>Study Details</h2>
+            {{ content | safe }}
+        </section>
+    </article>
+{% endblock %}
