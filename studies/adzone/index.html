@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    AdZone - SurfScape Labs
+    
+</title>
+<meta name="description" content="Experiments portal for testing new features and servies from SurfScape to the public.">
+<link rel="canonical" href="https://surfscape.github.io/labs">
+<link rel="stylesheet" href="/labs/css/global.min.css">
+<link rel="stylesheet" href="/labs/css/prism.min.css">
+<script data-goatcounter="https://surfscape-labs.goatcounter.com/count" async="" src="//gc.zgo.at/count.js"></script>
+  </head>
+  <body>
+    <header>
+    <a href="/labs/">SurfScape Labs</a>
+</header>
+    <main>
+      
+    <article class="two-col">
+        <aside>
+            <p>
+                <strong>Name:</strong>
+                AdZone</p>
+            <p>
+                <strong>Track Code:</strong>
+                <span class="track_code">SPTC070523SSA-AZ</span></p>
+            <p>
+                <strong>Summary:</strong>
+                Promotion platform using ad banners</p>
+            <p>
+                <strong>Status:</strong>
+                <span class="status-hiatus">Hiatus</span></p>
+            
+        </aside>
+        <section>
+            <h2>Study Details</h2>
+            <p>A promotion platform for users to promote their personal site trough ad banners.</p>
+<h2>Implementation Idea</h2>
+<p>AdZone would consist on a <code>iFrame</code> that users can add to their site where every <code>x</code> seconds the ad banner would change. If the user clicks on the banner it would go to that banner site on a new tab.</p>
+<p>The banner would be made by the user which could be uploaded to a public file host. The user then would send the banner link and the site information (url and title) trough GitHub issues or PRs. A email option would also be available but that is still pending.</p>
+<p>The banner can be either a <code>webp</code> for simple banners but also animated banners using either <code>gif</code> or <code>webp</code>.</p>
+<p>The code would simply go trough a <code>.json</code> database with all the joined websites like this:</p>
+<div class="pre-container">
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"adBanner"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"SurfScape"</span><span class="token punctuation">,</span>
+      <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://surfscape.github.io"</span><span class="token punctuation">,</span>
+      <span class="token property">"banner"</span><span class="token operator">:</span> <span class="token string">"https://imagehost.com/surfscape_banner.gif"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre>
+<p>and after some amount of time it would go to the next item in the array using a <code>for</code> loop.</p>
+</div>
+<h2>Notes</h2>
+<p>AdZone is part of the <a href="https://surfscape.github.io/advertising/">SurfScape Advertising</a> project which can be seen by the track code having <code>SSA-AZ</code> (SurfScape Advertising - AdZone).
+SSA already as a page for <a href="https://surfscape.github.io/advertising/adzone/">AdZone</a> with additional information. However this site will be deprecated with a new version using the SurfKit UI framework.</p>
+
+        </section>
+    </article>
+
+    </main>
+    <footer>
+    &copy; 2023 SurfScape Labs is part of the <a href="https://surfscape.neocities.org">SurfScape Project</a> - <a href="/labs/privacy">Privacy Policy</a>
+</footer>
+  </body>
+</html>

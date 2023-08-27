@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    NeoSearch - SurfScape Labs
+    
+</title>
+<meta name="description" content="Experiments portal for testing new features and servies from SurfScape to the public.">
+<link rel="canonical" href="https://surfscape.github.io/labs">
+<link rel="stylesheet" href="/labs/css/global.min.css">
+<link rel="stylesheet" href="/labs/css/prism.min.css">
+<script data-goatcounter="https://surfscape-labs.goatcounter.com/count" async="" src="//gc.zgo.at/count.js"></script>
+  </head>
+  <body>
+    <header>
+    <a href="/labs/">SurfScape Labs</a>
+</header>
+    <main>
+      
+    <article class="two-col">
+        <aside>
+            <p>
+                <strong>Name:</strong>
+                NeoSearch</p>
+            <p>
+                <strong>Track Code:</strong>
+                <span class="track_code">SPTC250823NS</span></p>
+            <p>
+                <strong>Summary:</strong>
+                Neocities search engine</p>
+            <p>
+                <strong>Status:</strong>
+                <span class="status-planing">Planing</span></p>
+            
+        </aside>
+        <section>
+            <h2>Study Details</h2>
+            <p>A Neocities search engine that would search any page and link inside the <code>neocities.org</code> domain.</p>
+<h2>Implementation, Roadblocks &amp; Alternatives</h2>
+<p>This could be done using a search API like the <a href="https://www.microsoft.com/en-us/bing/apis/bing-web-search-api">Bing Web Search API</a>, however, since NeoSearch runs on the client side this would expose the API key to anyone and since serverless functions are paid and we do not have any funds this is not an option.</p>
+<p>There's also the possibility to use the <a href="http://api.duckduckgo.com/?q=x&amp;format=json">DuckDuckGo API</a> since it does not need an API key, however, this is not a complete API and after some tests, it's not capable to search a lot of complex terms including links and words in the <code>neocities.org</code> domain.</p>
+<p>Another possiblity is to screen scrape DuckDuckGo for links. We would use the HTML or Lite version of DDG since it's lighter on the client side, however DDG does not include the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS header</a> meaning a domain (NeoSearch) can't access the content of another domain (DuckDuckGo HTML/Lite) unless allowed.</p>
+<p>We could also use <a href="https://programmablesearchengine.google.com/about/">Google CSE</a> which is what all Neocities search engines use but this goes againts our mission of not tracking users since Google is pretty much an advertising company. We have the resources to at least block the ads on CSE but that does not help with the tracking issue.</p>
+<p>The last possibility we have is to create a in-house CORS proxy to add the CORS header to DuckDuckGo and then screen scrape DuckDuckGo (or any other search engine) using JS on the client side, this will allows us to use DuckDuckGo as our provider and we do not need to use any API, however, the CORS proxy needs to be hosted on a server or use a serverless function and that would probably cost us some money monthly and since we don't have any funds this is mostly unlikely to happen.</p>
+
+        </section>
+    </article>
+
+    </main>
+    <footer>
+    &copy; 2023 SurfScape Labs is part of the <a href="https://surfscape.neocities.org">SurfScape Project</a> - <a href="/labs/privacy">Privacy Policy</a>
+</footer>
+  </body>
+</html>
