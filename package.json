@@ -1,6 +1,6 @@
 {
   "name": "surfscape-labs",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Experiments portal for testing new features and servies from SurfScape to the public.",
   "main": ".eleventy.js",
   "scripts": {
