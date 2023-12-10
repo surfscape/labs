@@ -3,7 +3,7 @@ title: NeoSearch
 track_code: SPTC250823NS
 date: 2023-08-25T00:00
 summary: Neocities search engine
-status: Planing
+status: Hiatus
 ---
 
 A Neocities search engine that would search any page and link inside the `neocities.org` domain.
