@@ -1,7 +1,6 @@
 const markdownIt = require("markdown-it");
 const markdownItAnc = require("markdown-it-anchor");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/public/");
@@ -14,7 +13,6 @@ module.exports = function (eleventyConfig) {
   md.use(markdownItAnc, {
     tabIndex: false,
   });
-  eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addCollection("studies", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/studies/**.md");
   });
@@ -32,7 +30,7 @@ module.exports = function (eleventyConfig) {
       includes: "_includes",
       layouts: "_layouts",
       data: "_data",
-      output: "_site",
+      output: "_dist",
     },
     templateFormats: ["md", "njk"],
     markdownTemplateEngine: "njk",
