@@ -6,7 +6,7 @@ Labs is a project created to share and test inside experiments from the SurfScap
 
 This is directed to developers but we also encourage all users to look around.
 
-It is recommended to use a desktop computer to test/run the studies.
+It is recommended to use a desktop computer to test/run/view studies.
 
 ## Current studies
 
