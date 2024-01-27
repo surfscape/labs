@@ -3,13 +3,15 @@ title: GameVortex
 track_code: SPTC120523GV
 date: 2023-05-12T00:00
 summary: Gaming portal
-status: Hiatus
+status: In Progress
 link: https://surfscape.github.io/gamevortex/
 ---
 
 A small web portal focused on gaming, specially on Flash and HTML5 games.
 
-**Note:** An old, working version of {{title}} is available.
+**Note 2:** GameVortex is being rewritten under Astro framework with a new, cleaner, design, additional features, and new (broken before) games.
+
+**Note 1:** An old, working version of {{title}} is available.
 
 ## Current Implementation & Issues
 
