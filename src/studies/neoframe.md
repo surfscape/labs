@@ -1,10 +1,12 @@
 ---
-title: Eversoul
+title: Neoframe
 track_code: SPTC270823E
 date: 2023-08-27T00:00
 summary: Design portal for templates and layouts
-status: Planing
+status: Hiatus
 ---
+
+**Update:** The project has been renamed to Neoframe.
 
 A web portal made for website templates, layouts, icons, and more web design resources and tools made by SurfScape but also by the community for Neocities.
 
@@ -25,6 +27,6 @@ The main categories will be:
 - buttons (web 1.0 buttons) - a library of (mostly 88x31) gif and png buttons.
 - icons (web 2.0 icons) - similar to buttons but for icons in different sizes (16x16, 32x32, etc).
 
-Eversoul will probably use a group of small `.json` files to create it's database since it will be a static website.
+Neoframe will probably use a group of small `.json` files to create it's database since it will be a static website.
 
 Users would be able to add content trough GitHub issues or PRs.
