@@ -1,88 +1,30 @@
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
+@import url("surfkit.bundle.css");
+
 :root {
-  --clr-background: hsl(212, 63%, 13%);
-  --clr-main: linear-gradient(to bottom, #0d3a61, #0c1f34);
-  --clr-accent: hsl(218, 65%, 70%);
-  --clr-text: #f9f9f9;
-  --clr-container: #25252c;
-  --clr-container-fill: #f0f1f6;
-  --clr-green: hsl(149, 60%, 60%);
+  --sk-color-background: hsl(240, 63%, 13%);
+  --sk-color-tp-heading: hsl(0, 0%, 100%);
+  --sk-color-tp-body: hsl(218, 21%, 89%);
+
+  --sk-color-primary: hsl(240, 85%, 85%);
+  --sk-color-on-primary: hsl(240, 100%, 20%);
+  --sk-color-primary--state: hsl(240, 86%, 78%);
+
+  --sk-color-accent: hsl(0, 0%, 89%);
+  --sk-color-on-accent: hsl(0, 0%, 25%);
+  --sk-color-accent--state: hsl(0, 0%, 77%);
+
+  --sk-color-focus: hsla(220, 100%, 63%, 0.7);
+
+  --clr-green: hsl(138, 70%, 56%);
   --clr-info: hsl(210, 60%, 60%);
-  --clr-warning: hsl(15, 60%, 60%);
+  --clr-warning: hsl(26, 80%, 62%);
   --clr-danger: hsl(0, 60%, 60%);
-  --spacing-xxsm: 0.25rem;
-  --spacing-xsm: 0.5rem;
-  --spacing-sm: 0.75rem;
-  --spacing: 1rem;
-  --breakpoint: 52rem;
 }
-html {
-  font-size: 15px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-body {
-  background: var(--clr-background);
-  font-size: 1rem;
-}
-a {
-  color: var(--clr-accent);
-}
-a:hover {
-  text-decoration: none;
-}
-body {
-  max-width: var(--breakpoint);
-  margin: 0 auto;
-  color: var(--clr-text);
-}
-.button,
-button {
-  display: inline-block;
-  background: hsl(206, 23%, 42%);
-  color: var(--clr-text);
-  border-radius: 2px;
-  font-size: 0.9em;
-  text-align: center;
-  padding: 0 var(--spacing-xsm);
-  text-decoration: none;
-}
-.button:hover,
-button {
-  background: hsl(206, 32%, 26%);
-}
-header {
-  border-top: 1px solid white;
-  border-right: 1px solid white;
-  border-left: 1px solid white;
-  background: linear-gradient(to bottom, #adb2ae, #d8d7d9);
-  padding: var(--spacing-xsm);
-}
-header a {
-  display: inline-block;
-  font-size: 1.1em;
-  color: #171e25;
-  font-weight: 700;
-  text-decoration: none;
-}
+
 main {
-  max-width: 100ch;
-  min-width: 0;
-  margin: 0 auto;
-  padding: var(--spacing);
-  border: 1px solid #58768f;
-  border-bottom: 1px solid #052449;
-  background: var(--clr-main);
+  padding: 1rem;
 }
-main :first-child {
-  margin-top: 0;
-}
-main :last-child {
-  margin-bottom: 0;
-}
+
 .pre-container {
   max-width: calc(100vw - 70px);
   overflow: auto;
