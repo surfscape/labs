@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-layout: single.njk
+layout: page.njk
 ---
 
 ## {{title}}

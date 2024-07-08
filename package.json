@@ -1,7 +1,7 @@
 {
   "name": "surfscape-labs",
-  "version": "0.1.0",
-  "description": "Experiments portal for testing new features and servies from SurfScape to the public.",
+  "version": "0.2.0",
+  "description": "Experiments portal for testing new features and servies from SurfScape",
   "main": ".eleventy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,9 +16,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "cross-env": "^7.0.3",
     "markdown-it": "^13.0.1",
-    "markdown-it-anchor": "^8.6.7"
-  },
-  "dependencies": {
-    "striptags": "^3.2.0"
+    "markdown-it-anchor": "^8.6.7",
+    "surfkit": "^0.0.3"
   }
 }

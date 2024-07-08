@@ -28,8 +28,7 @@ It is recommended to use a desktop computer to test/run/view studies.
 <td class="track_code" title="Study Public Track Code">{{study.data.track_code}}</td>
 <td class="summary">{{study.data.summary}}</td>
 <td class="status status-{{study.data.status | slugify}}">{{study.data.status}}</td>
-<td><a class="button" href="{{study.url}}">Access</a></td>
-</tr>
+<td><a class="sk-button" href="{{study.url}}">Access</a></td></tr>
 {%- endfor -%}
 </tbody>
 </table>
