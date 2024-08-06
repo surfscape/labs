@@ -1,6 +1,9 @@
-# SurfScape Labs
+# SurfScape Labs (deprecated)
 
-Experiments portal for testing new features and servies from SurfScape to the public.
+> [!IMPORTANT]  
+> SurfScape Labs project has been deprecated. Please check our [web portal](https://surfscape.neocities.org) for new information.
+
+Experiments portal for testing new features and services.
 
 ## Installation
 
